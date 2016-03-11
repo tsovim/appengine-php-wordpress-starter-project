@@ -24,14 +24,14 @@
     if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
         /** Live environment Cloud SQL login and SITE_URL info */
         /** Note that from App Engine, the password is not required, so leave it blank here */
-        define('DB_HOST', ':/cloudsql/your-project-id:wordpress');
-        define('DB_USER', 'root');
-        define('DB_PASSWORD', '');
+        define('DB_HOST', ':/cloudsql/maximal-ace-124622:wordpress');
+        define('DB_USER', 'ben');
+        define('DB_PASSWORD', 'ben2025a');
     } else {
         /** Local environment MySQL login info */
-        define('DB_HOST', '127.0.0.1');
-        define('DB_USER', 'root');
-        define('DB_PASSWORD', 'password');
+        define('DB_HOST', '46.121.75.157');
+        define('DB_USER', 'ben');
+        define('DB_PASSWORD', 'ben2025a');
     }
 
     // Determine HTTP or HTTPS, then set WP_SITEURL and WP_HOME
